@@ -2,25 +2,29 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
 
-# Virtual environment
+# Virtual environments (consolidated all related rules)
 venv/
 ai/
 .env
+*/Lib/site-packages/  # Catches site-packages in any subdirectory
 
 # Logs and databases
 *.log
 *.sqlite
+*.db
 
 # IDE
 .vscode/
 .idea/
 
-# System
+# System files
 .DS_Store
 Thumbs.db
 
-# Project-specific
+# Project outputs
 reports/
 *.csv
 *.pdf
+*.xlsx
